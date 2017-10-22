@@ -1,6 +1,5 @@
 import requests
 import logging  
-import itchat
 import time
 from email.mime.text import MIMEText
 from email.header import Header
