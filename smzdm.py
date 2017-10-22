@@ -33,19 +33,9 @@ def logging_reg():
 	logger.addHandler(fh)  
 	logger.addHandler(ch)  
 
-def send_mail(sender_qq='3273863232',pwd='wsvezwwwjmbuchff',\
-    receiver='651089527@qq.com',mail_title='',mail_content=''):
-	#sender_qq为发件人的qq号码
-	#sender_qq = '3723358***'
-	#pwd为qq邮箱的授权码
-	#pwd = '**iao***lxpic***'
-	#收件人邮箱receiver
-	#receiver='thunder***@gmail.com'
-	#邮件的正文内容
-	#mail_content = '你好，我是来自知乎的[邓旭东HIT] ，现在在进行一项用python登录qq邮箱发邮件的测试'
-	#邮件标题
-	#mail_title = '邓旭东HIT 的邮件'
-    # qq邮箱smtp服务器
+def send_mail(sender_qq='',pwd='',\
+    receiver='',mail_title='',mail_content=''):
+
     host_server = 'smtp.qq.com'
     sender_qq_mail = sender_qq+'@qq.com'
 
@@ -80,7 +70,7 @@ def smzdm():
 	}
 
 	cookies_ = {
-		'sess': 'OTkyNjN8MTUxMjM2NDkyN3w2Nzc0NjIxNTA2fDZjYzM1NGIwY2MwN2RlZmIxYTMzYWQyN2UzMjI0YjAz',
+		'sess': '',
 		'device_smzdm_version': '8.3.2',
 		'device_smzdm': 'android'
 
